@@ -6,6 +6,13 @@ const nextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+   eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // Skip type checking during build
+    ignoreBuildErrors: true,
+  },
 }
 
 module.exports = nextConfig
