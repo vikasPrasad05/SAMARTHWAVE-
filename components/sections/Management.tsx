@@ -9,14 +9,14 @@ const team = [
     name: "Mr. Dipak chaudhari",
     role: "Director",
     experience:
-      "20+ years in Advertising Field, leading the facility management venture",
+      "18+ years in Advertising Field, leading the facility management venture",
     img: "\client1.jpeg",
   },
   {
     name: "M/S Jigyasa Tiwari",
     role: "Director",
     experience:
-      "16+ years in Human Resource function, expert in labour laws and statutory compliance",
+      // "16+ years in Human Resource function, expert in labour laws and statutory compliance",
     img: "\client2.jpeg",
   },
   // {
