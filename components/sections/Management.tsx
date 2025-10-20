@@ -15,15 +15,13 @@ const team = [
   {
     name: "M/S Jigyasa Tiwari",
     role: "Director",
-    experience:
-      // "16+ years in Human Resource function, expert in labour laws and statutory compliance",
     img: "\client2.jpeg",
   },
   // {
   //   name: "Mr. Dipak chaudhari",
-  //   role: "Operation Manager",
-  //   experience:
-  //     "15+ years in marketing and sales for facility management industry",
+  //   // role: "Operation Manager",
+  //   // experience:
+  //   //   "15+ years in marketing and sales for facility management industry",
   //   img: "", // 👈 leave blank to test fallback avatar
   // },
 ];
