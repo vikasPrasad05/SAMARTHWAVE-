@@ -183,7 +183,7 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold mb-1">Phone</p>
                     <a href="tel:+919876543210" className="text-gray-600 hover:text-primary">
-                      +91 98765 43210
+                      +91 92271 55591
                     </a>
                   </div>
                 </div>
