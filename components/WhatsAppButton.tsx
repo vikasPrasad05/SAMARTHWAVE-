@@ -11,25 +11,25 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20BA5A] transition-all duration-300 group"
+      className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50 bg-[#25D366] text-white p-3 sm:p-4 rounded-full shadow-2xl hover:bg-[#20BA5A] transition-all duration-300 group w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center"
       whileHover={{ scale: 1.1, rotate: 5 }}
       whileTap={{ scale: 0.9 }}
       initial={{ scale: 0, rotate: -180 }}
       animate={{ scale: 1, rotate: 0 }}
-      transition={{ 
+      transition={{
         delay: 1,
         type: "spring",
         stiffness: 260,
-        damping: 20 
+        damping: 20,
       }}
     >
       {/* Pulse Animation Ring */}
       <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20"></span>
-      
+
       {/* WhatsApp Icon SVG */}
       <svg
         viewBox="0 0 24 24"
-        className="w-7 h-7 relative z-10"
+        className="w-6 h-6 sm:w-7 sm:h-7 relative z-10"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -37,7 +37,7 @@ export default function WhatsAppButton() {
       </svg>
 
       {/* Tooltip */}
-      <span className="absolute bottom-full right-0 mb-2 px-3 py-1 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+      <span className="absolute bottom-full right-1/2 translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-center">
         Chat on WhatsApp
       </span>
     </motion.a>

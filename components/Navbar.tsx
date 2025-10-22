@@ -36,25 +36,25 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 pt-6"
+      className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-5 md:px-6 pt-4 sm:pt-5 md:pt-6"
     >
       <div
-        className={`max-w-7xl mx-auto transition-all duration-500 ease-out ${
+        className={`max-w-7xl mx-auto transition-all duration-500 ease-out w-full ${
           isScrolled
             ? "bg-white/80 backdrop-blur-3xl shadow-2xl shadow-black/5"
             : "bg-white/10 backdrop-blur-2xl"
-        } rounded-[20px] border border-white/20`}
+        } rounded-2xl sm:rounded-[20px] border border-white/20`}
       >
-        <div className="flex items-center justify-between h-16 md:h-20 px-6 md:px-8">
-          {/* Logo with Glow Effect */}
+        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20 px-4 sm:px-6 md:px-8">
+          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="relative cursor-pointer group"
+            className="relative cursor-pointer flex-shrink-0"
             onClick={() => scrollToSection("#home")}
           >
             <span
-              className={`text-xl md:text-2xl font-bold tracking-tight transition-all duration-300 ${
+              className={`text-lg sm:text-xl md:text-2xl font-bold tracking-tight transition-all duration-300 ${
                 isScrolled
                   ? "bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent"
                   : "text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.5)]"
@@ -64,8 +64,8 @@ export default function Navbar() {
             </span>
           </motion.div>
 
-          {/* Desktop Menu with Pills */}
-          <div className="hidden md:flex items-center gap-2 bg-white/5 rounded-full px-2 py-2">
+          {/* Desktop Menu */}
+          <div className="hidden md:flex flex-wrap items-center gap-1 sm:gap-2 bg-white/5 rounded-full px-2 sm:px-3 py-1.5 sm:py-2">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.name}
@@ -75,7 +75,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item.href)}
-                className={`relative px-5 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
+                className={`relative px-3 sm:px-4 md:px-5 py-2 md:py-2.5 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 ${
                   isScrolled
                     ? "text-gray-700 hover:bg-white hover:shadow-lg"
                     : "text-white hover:bg-white/20"
@@ -86,11 +86,11 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Button - Glass Style */}
+          {/* Mobile Menu Button */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2.5 rounded-full transition-all duration-300 ${
+            className={`md:hidden p-2 rounded-full transition-all duration-300 ${
               isScrolled
                 ? "bg-gray-100/80 text-gray-700"
                 : "bg-white/20 text-white"
@@ -100,7 +100,7 @@ export default function Navbar() {
           </motion.button>
         </div>
 
-        {/* Mobile Menu - Glassmorphic */}
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
@@ -111,17 +111,17 @@ export default function Navbar() {
               isScrolled ? "border-gray-200/50" : "border-white/10"
             }`}
           >
-            <div className="py-4 px-4 space-y-1">
+            <div className="py-3 px-3 sm:py-4 sm:px-5 space-y-1 sm:space-y-1.5">
               {navItems.map((item) => (
                 <motion.button
                   key={item.name}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left px-5 py-3.5 rounded-2xl font-medium transition-all duration-300 ${
+                  className={`block w-full text-left px-4 sm:px-5 py-2.5 sm:py-3.5 rounded-xl sm:rounded-2xl font-medium transition-all duration-300 ${
                     isScrolled
                       ? "text-gray-700 hover:bg-gradient-to-r hover:from-[#667eea]/10 hover:to-[#764ba2]/10 hover:text-primary"
                       : "text-white hover:bg-white/20"
-                  }`}
+                  } text-sm sm:text-base`}
                 >
                   {item.name}
                 </motion.button>
