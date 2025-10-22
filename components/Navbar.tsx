@@ -60,7 +60,12 @@ export default function Navbar() {
                   : "text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.5)]"
               }`}
             >
-              SAMARTHWAVE
+              <img
+  src="\logo.svg"
+  alt="Samarthwave Logo"
+  className="h-8 w-auto sm:h-10 md:h-12 lg:h-14 rounded-lg"
+  onClick={() => scrollToSection("#home")}
+/>
             </span>
           </motion.div>
 
