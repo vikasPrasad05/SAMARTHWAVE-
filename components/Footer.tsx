@@ -92,21 +92,21 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  A/32, Plot No. 557, Jalkiran CHS<br />
-                  Charkop, Kandivali – West<br />
-                  Mumbai – 400067
-                </p>
+                  SH/1, MADHAV PARK APPT <br />
+                      JAY BHARAT NAGAR – CHHIRI<br />
+                      PARDI,VALSAD,GUJARAT – 
+                    </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  +91 98765 43210
+                <a href="tel:+91 92271 55591" className="text-gray-400 hover:text-white transition-colors text-sm">
+                +91 92271 55591
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@samarthwave.com" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  info@samarthwave.com
+                <a href="mailto: info@samarthwavehospitality.com" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  info@samarthwavehospitality.com
                 </a>
               </div>
             </div>

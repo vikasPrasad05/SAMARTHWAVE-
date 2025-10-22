@@ -172,9 +172,9 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold mb-1">Head Office</p>
                     <p className="text-gray-600">
-                      A/32, Plot No. 557, Jalkiran CHS<br />
-                      Charkop, Kandivali – West<br />
-                      Mumbai – 400067
+                      SH/1, MADHAV PARK APPT <br />
+                      JAY BHARAT NAGAR – CHHIRI<br />
+                      PARDI,VALSAD,GUJARAT – 
                     </p>
                   </div>
                 </div>
@@ -191,8 +191,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-semibold mb-1">Email</p>
-                    <a href="mailto:info@samarthwave.com" className="text-gray-600 hover:text-primary">
-                      info@samarthwave.com
+                    <a href="mailto: info@samarthwavehospitality.com" className="text-gray-600 hover:text-primary">
+                       info@samarthwavehospitality.com
                     </a>
                   </div>
                 </div>
