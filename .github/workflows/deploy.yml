@@ -13,7 +13,7 @@ jobs:
       - name: Trigger Deploy Webhook
         run: |
           echo "🚀 Starting deployment to server..."
-          response=$(curl -s -o /dev/null -w "%{http_code}" -X GET "${{ secrets.AAPANEL_WEBHOOK }}")
+          response=$(curl -k -s -o /dev/null -w "%{http_code}" -X GET "${{ secrets.AAPANEL_WEBHOOK }}")
           
           if [ "$response" = "200" ]; then
             echo "✅ Deploy webhook triggered successfully!"
