@@ -191,8 +191,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-semibold mb-1">Email</p>
-                    <a href="mailto:info@samarthwave.com" className="text-gray-600 hover:text-primary">
-                      info@samarthwave.com
+                    <a href="mailto:info@samarthwavehospitality.com" className="text-gray-600 hover:text-primary">
+                      info@samarthwavehospitality.com
                     </a>
                   </div>
                 </div>
