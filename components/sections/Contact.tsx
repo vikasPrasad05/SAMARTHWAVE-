@@ -59,14 +59,16 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16 sm:py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-wrap break-words">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 gradient-text">Contact Us</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 gradient-text">
+            Contact Us
+          </h2>
           <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-[#667eea] to-[#764ba2] mx-auto rounded"></div>
         </motion.div>
 
@@ -144,7 +146,7 @@ export default function Contact() {
                     ) : (
                       <AlertCircle className="w-5 h-5" />
                     )}
-                    <p>{status.message}</p>
+                    <p className="break-words max-w-full">{status.message}</p>
                   </motion.div>
                 )}
               </form>
@@ -163,29 +165,37 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
+                  <div className="break-words max-w-full">
                     <p className="font-semibold mb-1">Head Office</p>
-                    <p className="text-gray-600 text-sm sm:text-base">
+                    <p className="text-gray-600 text-sm sm:text-base break-words max-w-full">
                       SH/1, MADHAV PARK APPT <br />
                       JAY BHARAT NAGAR – CHHIRI<br />
-                      PARDI,VALSAD,GUJARAT
+                      PARDI, VALSAD, GUJARAT
                     </p>
                   </div>
                 </div>
+
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
+                  <div className="break-words max-w-full">
                     <p className="font-semibold mb-1">Phone</p>
-                    <a href="tel:+919227155591" className="text-gray-600 hover:text-primary text-sm sm:text-base">
+                    <a 
+                      href="tel:+919227155591" 
+                      className="text-gray-600 hover:text-primary text-sm sm:text-base break-all"
+                    >
                       +91 92271 55591
                     </a>
                   </div>
                 </div>
+
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
+                  <div className="break-words max-w-full">
                     <p className="font-semibold mb-1">Email</p>
-                    <a href="mailto:info@samarthwavehospitality.com" className="text-gray-600 hover:text-primary text-sm sm:text-base">
+                    <a 
+                      href="mailto:info@samarthwavehospitality.com" 
+                      className="text-gray-600 hover:text-primary text-sm sm:text-base break-all"
+                    >
                       info@samarthwavehospitality.com
                     </a>
                   </div>
